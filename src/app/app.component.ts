@@ -7,9 +7,9 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
-  constructor(private g: Geolocation) {
-    this.g.getCurrentPosition((gg) => {
-      console.log(gg);
-    });
+  a:any;
+  constructor(private gg:Geolocation) {
+  
   }
+  abcd() {}
 }
