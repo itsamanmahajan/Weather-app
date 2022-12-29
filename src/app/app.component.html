@@ -1,11 +1,27 @@
-<div class="container">
-  <div class="upper-data">
-    <!-- <img rel="prefetch" crossorigin="anonymous"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhTP-pHDcaAGk9m0bL45Q0aXgPt0OnoEjs-nJ7qy1PwDOondU0uEoWbMfOBEhUbDiL6Oo&usqp=CAU" alt="hot temperature" *ngIf="14>15">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM6FwaXAaKufFfDRFAgHulnRjzhmNxeNfDeg&usqp=CAU" alt="cold" *ngIf="8>7"> -->
-    ho3ir4e
-  </div>
+<body>
+  <div class="container">
+    <div class="upper-data">
+      <img
+        rel="prefetch"
+        crossorigin="anonymous"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhTP-pHDcaAGk9m0bL45Q0aXgPt0OnoEjs-nJ7qy1PwDOondU0uEoWbMfOBEhUbDiL6Oo&usqp=CAU"
+        style="width:400px;"
+        alt="hot temperature"
+        *ngIf="14 < 15"
+      />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM6FwaXAaKufFfDRFAgHulnRjzhmNxeNfDeg&usqp=CAU"
+        alt="cold"
+        *ngIf="1 > 7"
+      />
+      <div class="weather-data">
+        <div class="location">Nagda</div>
+        <div class="temp">{{ 14.4 | number: '1.0-0' }}</div>
+      </div>
+    </div>
 
-  <div class="lower-data">
-    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWcLl8_RXftgS0VOmXS_SUTiacipzEeoHKyA&usqp=CAU" alt=""> -->
+    <div class="lower-data">
+      <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWcLl8_RXftgS0VOmXS_SUTiacipzEeoHKyA&usqp=CAU" alt=""> -->
+    </div>
   </div>
-</div>
+</body>
