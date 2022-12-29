@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { Abs } from './abs';
+import { AService } from './a.service';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  providers: [Geolocation],
+  providers: [{provide:Abs,useClass:AService}],
   declarations: [AppComponent, HelloComponent],
   bootstrap: [AppComponent],
 })
